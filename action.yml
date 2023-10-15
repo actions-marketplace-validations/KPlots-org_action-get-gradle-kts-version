@@ -1,13 +1,13 @@
-name: 'Get gradle version action'
-description: 'Extracts the version string from the build.gradle file'
+name: 'Get version from build.gradle.kts'
+description: 'Extracts the version string from the build.gradle.kts file'
 inputs:
   file:
-    description: 'build.gradle file'
+    description: 'build.gradle.kts file'
     required: false
-    default: 'build.gradle'
+    default: 'build.gradle.kts'
 outputs:
   version:
-    description: 'The version string from the build.gradle file'
+    description: 'The version string from the build.gradle.kts file'
 runs:
   using: 'node12'
   main: 'index.js'
