@@ -2,7 +2,7 @@ const fs = require('fs');
 const core = require('@actions/core');
 
 try {
-  const file = core.getInput('file') || 'build.gradle';
+  const file = core.getInput('file') || 'build.gradle.kts';
   console.log(`Using ${file}`);
   const bg = fs.readFileSync(file) + "";
   
